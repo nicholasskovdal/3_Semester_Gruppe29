@@ -1,0 +1,17 @@
+﻿
+@model List<BCD>
+
+
+@section title{
+<h2>BCD</h2>
+}
+
+<ul>
+    @foreach(var bcd in Model)
+    {
+        <li>
+            @bcd.Brand, @bcd.Model, @bcd.Sizes, @bcd.PricePerDay
+        </li>
+    }
+</ul>
+

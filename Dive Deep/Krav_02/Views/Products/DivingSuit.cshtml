@@ -1,0 +1,14 @@
+﻿@model List<DivingSuit>
+
+@section title {
+    <h2>Diving Suits</h2>
+}
+
+<ul>
+    @foreach (var divingSuit in Model)
+    {
+        <li>
+            @divingSuit.Brand, @divingSuit.Model, @divingSuit.Sizes, @divingSuit.PricePerDay, @divingSuit.Type, @divingSuit.Gender, @divingSuit.Thickness
+        </li>
+    }
+</ul>
